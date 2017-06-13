@@ -4,13 +4,13 @@
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :first_name %><br />
-    <%= f.first_name_field :first_name, autofocus: true %>
+    <%= f.label :first_name, "First Name" %><br />
+    <%= f.text_field :first_name, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :last_name %><br />
-    <%= f.last_name_field :last_name %>
+    <%= f.label :last_name, "Last Name" %><br />
+    <%= f.text_field :last_name %>
   </div>
 
   <div class="field">
@@ -27,12 +27,12 @@
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation, "Password Confirmation" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign Up" %>
   </div>
 <% end %>
 

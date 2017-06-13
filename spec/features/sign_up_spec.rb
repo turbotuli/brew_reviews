@@ -17,7 +17,7 @@ feature 'sign up' , %Q{
     visit root_path
     click_link 'Sign Up'
     fill_in 'First Name', with: 'John'
-    fill_in 'Lat Name', with: 'Smith'
+    fill_in 'Last Name', with: 'Smith'
     fill_in 'Email', with: 'user@example.com'
     fill_in 'Password', with: 'password'
     fill_in 'Password Confirmation', with: 'password'
