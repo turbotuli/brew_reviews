@@ -7,11 +7,11 @@ feature 'sign up' , %Q{
   So that I can submit brews for review, etc.
 } do
 
-# ACCEPTANCE CRITERIA
-# I must specify a valid email address
-# I must specify a password and confirm that password
-# If I do perform the above I get an error
-# If I specify valid information, I register my account and am authenticated
+  # ACCEPTANCE CRITERIA
+  # I must specify a first name, last name and valid email address
+  # I must specify a password and confirm that password
+  # If I specify valid information, I register my account and am authenticated
+  # If I do not specify valid information I am given errors
 
   scenario 'specifying valid and required info' do
     visit root_path
